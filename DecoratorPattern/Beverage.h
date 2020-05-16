@@ -6,6 +6,6 @@ class Beverage
 {
 public:
 	virtual ~Beverage() = default;
-	virtual std::string getDesciption() const = 0;
+	virtual std::string getDescription() const = 0;
 	virtual float getCost() const = 0;
 };

@@ -5,9 +5,9 @@ Whip::Whip(Beverage* beverage)
 	this->beverage = beverage;
 }
 
-std::string Whip::getDesciption() const
+std::string Whip::getDescription() const
 {
-	return this->beverage->getDesciption() + ", Whip";
+	return this->beverage->getDescription() + ", Whip";
 }
 
 float Whip::getCost() const

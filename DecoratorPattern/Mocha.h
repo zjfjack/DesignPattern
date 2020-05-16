@@ -6,6 +6,6 @@ class Mocha : public CondimentDecorator
 {
 public:
 	Mocha(Beverage* beverage);
-	virtual std::string getDesciption() const override;
+	virtual std::string getDescription() const override;
 	virtual float getCost() const override;
 };

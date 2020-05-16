@@ -5,9 +5,9 @@ Mocha::Mocha(Beverage* beverage) // Cannot use initializer list because beverage
 	this->beverage = beverage;
 }
 
-std::string Mocha::getDesciption() const
+std::string Mocha::getDescription() const
 {
-	return this->beverage->getDesciption() + ", Mocha";
+	return this->beverage->getDescription() + ", Mocha";
 }
 
 float Mocha::getCost() const

@@ -7,7 +7,7 @@
 
 void printBaverage(const Beverage& beverage)
 {
-	std::cout << beverage.getDesciption() << " $" << beverage.getCost() << std::endl;
+	std::cout << beverage.getDescription() << " $" << beverage.getCost() << std::endl;
 }
 
 int main() 

@@ -1,6 +1,6 @@
 #include "HouseBlend.h"
 
-std::string HouseBlend::getDesciption() const
+std::string HouseBlend::getDescription() const
 {
 	return "House Blend Coffee";
 }

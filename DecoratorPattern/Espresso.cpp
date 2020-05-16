@@ -1,6 +1,6 @@
 #include "Espresso.h"
 
-std::string Espresso::getDesciption() const
+std::string Espresso::getDescription() const
 {
 	return "Espresso";
 }
