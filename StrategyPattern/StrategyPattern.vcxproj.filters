@@ -15,45 +15,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Duck.cpp">
+    <ClCompile Include="Duck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\FlyBehavior.cpp">
+    <ClCompile Include="FlyBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\MallardDuck.cpp">
+    <ClCompile Include="MallardDuck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\QuackBehavior.cpp">
+    <ClCompile Include="QuackBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RedheadDuck.cpp">
+    <ClCompile Include="RedheadDuck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RubberDuck.cpp">
+    <ClCompile Include="RubberDuck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tests\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Duck.h">
+    <ClInclude Include="Duck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\FlyBehavior.h">
+    <ClInclude Include="FlyBehavior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\MallardDuck.h">
+    <ClInclude Include="MallardDuck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\QuackBehavior.h">
+    <ClInclude Include="QuackBehavior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\RedheadDuck.h">
+    <ClInclude Include="RedheadDuck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\RubberDuck.h">
+    <ClInclude Include="RubberDuck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

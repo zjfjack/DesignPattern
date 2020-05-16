@@ -91,7 +91,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,7 +123,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,21 +152,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Duck.cpp" />
-    <ClCompile Include="src\FlyBehavior.cpp" />
-    <ClCompile Include="tests\main.cpp" />
-    <ClCompile Include="src\MallardDuck.cpp" />
-    <ClCompile Include="src\QuackBehavior.cpp" />
-    <ClCompile Include="src\RedheadDuck.cpp" />
-    <ClCompile Include="src\RubberDuck.cpp" />
+    <ClCompile Include="Duck.cpp" />
+    <ClCompile Include="FlyBehavior.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MallardDuck.cpp" />
+    <ClCompile Include="QuackBehavior.cpp" />
+    <ClCompile Include="RedheadDuck.cpp" />
+    <ClCompile Include="RubberDuck.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Duck.h" />
-    <ClInclude Include="include\FlyBehavior.h" />
-    <ClInclude Include="include\MallardDuck.h" />
-    <ClInclude Include="include\QuackBehavior.h" />
-    <ClInclude Include="include\RedheadDuck.h" />
-    <ClInclude Include="include\RubberDuck.h" />
+    <ClInclude Include="Duck.h" />
+    <ClInclude Include="FlyBehavior.h" />
+    <ClInclude Include="MallardDuck.h" />
+    <ClInclude Include="QuackBehavior.h" />
+    <ClInclude Include="RedheadDuck.h" />
+    <ClInclude Include="RubberDuck.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
