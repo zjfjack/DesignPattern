@@ -1,7 +1,8 @@
 #include "WeatherData.h"
 #include <algorithm>
 
-WeatherData::WeatherData(WeatherMeasurements measurements) : measurements(measurements) {}
+WeatherData::WeatherData(const WeatherMeasurements& measurements) 
+	: measurements(measurements) {}
 
 void WeatherData::registerObserver(Observer *o)
 {
@@ -24,7 +25,7 @@ void WeatherData::measurementsChanged() const
 	notifyObservers();
 }
 
-void WeatherData::setMeasurements(WeatherMeasurements measurements)
+void WeatherData::setMeasurements(const WeatherMeasurements& measurements)
 {
 	this->measurements = measurements;
 	measurementsChanged();

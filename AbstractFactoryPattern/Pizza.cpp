@@ -19,7 +19,7 @@ std::string Pizza::getDescription() const
 	return description;
 }
 
-CheesePizza::CheesePizza(PizzaIngredientFactory* pizzaIngredientFactory, std::string name)
+CheesePizza::CheesePizza(PizzaIngredientFactory* pizzaIngredientFactory, const std::string& name)
 {
 	this->pizzaIngredientFactory = pizzaIngredientFactory;
 	this->name = name;
@@ -32,7 +32,7 @@ void CheesePizza::prepare()
 	cheese = pizzaIngredientFactory->createCheese();
 }
 
-VeggiePizza::VeggiePizza(PizzaIngredientFactory* pizzaIngredientFactory, std::string name)
+VeggiePizza::VeggiePizza(PizzaIngredientFactory* pizzaIngredientFactory, const std::string& name)
 {
 	this->pizzaIngredientFactory = pizzaIngredientFactory;
 	this->name = name;

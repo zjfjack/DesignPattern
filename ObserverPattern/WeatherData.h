@@ -13,10 +13,10 @@ private:
 	void measurementsChanged() const;
 
 public:
-	WeatherData(WeatherMeasurements measurements);
+	WeatherData(const WeatherMeasurements& measurements);
 
 	virtual void registerObserver(Observer *o) override;
 	virtual void removeObserver(Observer *o) override;
 
-	void setMeasurements(WeatherMeasurements measurements);
+	void setMeasurements(const WeatherMeasurements& measurements);
 };

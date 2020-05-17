@@ -23,7 +23,7 @@ protected:
 class CheesePizza : public Pizza
 {
 public:
-	CheesePizza(PizzaIngredientFactory* pizzaIngredientFactory, std::string name);
+	CheesePizza(PizzaIngredientFactory* pizzaIngredientFactory, const std::string& name);
 protected:
 	virtual void prepare() override;
 };
@@ -31,7 +31,7 @@ protected:
 class VeggiePizza : public Pizza
 {
 public:
-	VeggiePizza(PizzaIngredientFactory* pizzaIngredientFactory, std::string name);
+	VeggiePizza(PizzaIngredientFactory* pizzaIngredientFactory, const std::string& name);
 protected:
 	virtual void prepare() override;
 };
