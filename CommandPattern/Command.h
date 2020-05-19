@@ -2,6 +2,7 @@
 #include "Light.h"
 #include "TV.h"
 #include "Fan.h"
+#include <memory>
 
 class Command
 {
@@ -14,9 +15,9 @@ public:
 class LightOnCommand : public Command
 {
 private:
-	Light* light = nullptr;
+	std::shared_ptr<Light> light;
 public:
-	LightOnCommand(Light* light);
+	LightOnCommand(std::shared_ptr<Light> light);
 	virtual void execute() override;
 	virtual void undo() override;
 };
@@ -24,9 +25,9 @@ public:
 class LightOffCommand : public Command
 {
 private:
-	Light* light = nullptr;
+	std::shared_ptr<Light> light;
 public:
-	LightOffCommand(Light* light);
+	LightOffCommand(std::shared_ptr<Light> light);
 	virtual void execute() override;
 	virtual void undo() override;
 };
@@ -34,9 +35,9 @@ public:
 class TVOnCommand : public Command
 {
 private:
-	TV* tv = nullptr;
+	std::shared_ptr<TV> tv;
 public:
-	TVOnCommand(TV* tv);
+	TVOnCommand(std::shared_ptr<TV> tv);
 	virtual void execute() override;
 	virtual void undo() override;
 };
@@ -44,9 +45,9 @@ public:
 class TVOffCommand : public Command
 {
 private:
-	TV* tv = nullptr;
+	std::shared_ptr<TV> tv;
 public:
-	TVOffCommand(TV* tv);
+	TVOffCommand(std::shared_ptr<TV> tv);
 	virtual void execute() override;
 	virtual void undo() override;
 };
@@ -57,35 +58,35 @@ public:
 	virtual void undo() override;
 	virtual void execute() override;
 protected:
-	FanCommand(Fan* fan);
-	Fan* fan = nullptr;
+	FanCommand(std::shared_ptr<Fan> fan);
+	std::shared_ptr<Fan> fan = nullptr;
 	int prevSpeed = 0;
 };
 
 class FanHighCommand : public FanCommand
 {
 public:
-	FanHighCommand(Fan* fan);
+	FanHighCommand(std::shared_ptr<Fan> fan);
 	virtual void execute() override;
 };
 
 class FanMediumCommand : public FanCommand
 {
 public:
-	FanMediumCommand(Fan* fan);
+	FanMediumCommand(std::shared_ptr<Fan> fan);
 	virtual void execute() override;
 };
 
 class FanLowCommand : public FanCommand
 {
 public:
-	FanLowCommand(Fan* fan);
+	FanLowCommand(std::shared_ptr<Fan> fan);
 	virtual void execute() override;
 };
 
 class FanOffCommand : public FanCommand
 {
 public:
-	FanOffCommand(Fan* fan);
+	FanOffCommand(std::shared_ptr<Fan> fan);
 	virtual void execute() override;
 };

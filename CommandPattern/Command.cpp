@@ -1,7 +1,7 @@
 #include "Command.h"
 #include <iostream>
 
-LightOnCommand::LightOnCommand(Light* light) : light(light) {}
+LightOnCommand::LightOnCommand(std::shared_ptr<Light> light) : light(light) {}
 
 void LightOnCommand::execute()
 {
@@ -13,7 +13,7 @@ void LightOnCommand::undo()
 	light->off();
 }
 
-LightOffCommand::LightOffCommand(Light* light) : light(light) {}
+LightOffCommand::LightOffCommand(std::shared_ptr<Light> light) : light(light) {}
 
 void LightOffCommand::execute()
 {
@@ -25,7 +25,7 @@ void LightOffCommand::undo()
 	light->on();
 }
 
-TVOnCommand::TVOnCommand(TV* tv) : tv(tv) {}
+TVOnCommand::TVOnCommand(std::shared_ptr<TV> tv) : tv(tv) {}
 
 void TVOnCommand::execute()
 {
@@ -37,7 +37,7 @@ void TVOnCommand::undo()
 	tv->off();
 }
 
-TVOffCommand::TVOffCommand(TV* tv) : tv(tv) {}
+TVOffCommand::TVOffCommand(std::shared_ptr<TV> tv) : tv(tv) {}
 
 void TVOffCommand::execute()
 {
@@ -49,7 +49,7 @@ void TVOffCommand::undo()
 	tv->on();
 }
 
-FanCommand::FanCommand(Fan* fan) : fan(fan) {}
+FanCommand::FanCommand(std::shared_ptr<Fan> fan) : fan(fan) {}
 
 void FanCommand::undo()
 {
@@ -77,7 +77,7 @@ void FanCommand::execute()
 	prevSpeed = fan->getSpeed();
 }
 
-FanHighCommand::FanHighCommand(Fan* fan) : FanCommand(fan) {}
+FanHighCommand::FanHighCommand(std::shared_ptr<Fan> fan) : FanCommand(fan) {}
 
 void FanHighCommand::execute()
 {
@@ -85,26 +85,26 @@ void FanHighCommand::execute()
 	fan->high();
 }
 
-FanMediumCommand::FanMediumCommand(Fan* fan) : FanCommand(fan) {}
+FanMediumCommand::FanMediumCommand(std::shared_ptr<Fan> fan) : FanCommand(fan) {}
 
 void FanMediumCommand::execute()
 {
 	FanCommand::execute();
-	fan->high();
+	fan->medium();
 }
 
-FanLowCommand::FanLowCommand(Fan* fan) : FanCommand(fan) {}
+FanLowCommand::FanLowCommand(std::shared_ptr<Fan> fan) : FanCommand(fan) {}
 
 void FanLowCommand::execute()
 {
 	FanCommand::execute();
-	fan->high();
+	fan->low();
 }
 
-FanOffCommand::FanOffCommand(Fan* fan) : FanCommand(fan) {}
+FanOffCommand::FanOffCommand(std::shared_ptr<Fan> fan) : FanCommand(fan) {}
 
 void FanOffCommand::execute()
 {
 	FanCommand::execute();
-	fan->high();
+	fan->off();
 }
