@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Pizza.h"
-#include "NYPizzaStore.h"
-#include "ChicagoPizzaStore.h"
+#include "PizzaStore.h"
 
 int main()
 {

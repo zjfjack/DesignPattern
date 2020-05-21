@@ -138,29 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ChicagoPizzaStore.cpp" />
-    <ClCompile Include="ChicagoStyleCheesePizza.cpp" />
-    <ClCompile Include="ChicagoStyleClamPizza.cpp" />
-    <ClCompile Include="ChicagoStyleVeggiePizza.cpp" />
-    <ClCompile Include="NYStyleCheesePizza.cpp" />
-    <ClCompile Include="NYStyleClamPizza.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="NYPizzaStore.cpp" />
+    <ClCompile Include="Pizza.cpp" />
     <ClCompile Include="PizzaStore.cpp" />
-    <ClCompile Include="NYStyleVeggiePizza.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ChicagoPizzaStore.h" />
-    <ClInclude Include="ChicagoStyleCheesePizza.h" />
-    <ClInclude Include="ChicagoStyleClamPizza.h" />
-    <ClInclude Include="ChicagoStyleVeggiePizza.h" />
-    <ClInclude Include="NYStyleCheesePizza.h" />
-    <ClInclude Include="NYStyleClamPizza.h" />
-    <ClInclude Include="NYPizzaStore.h" />
     <ClInclude Include="Pizza.h" />
     <ClInclude Include="PizzaStore.h" />
-    <ClInclude Include="PizzaType.h" />
-    <ClInclude Include="NYStyleVeggiePizza.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

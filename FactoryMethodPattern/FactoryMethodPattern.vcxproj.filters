@@ -21,28 +21,7 @@
     <ClCompile Include="PizzaStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NYPizzaStore.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NYStyleCheesePizza.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NYStyleClamPizza.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NYStyleVeggiePizza.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ChicagoPizzaStore.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ChicagoStyleCheesePizza.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ChicagoStyleClamPizza.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ChicagoStyleVeggiePizza.cpp">
+    <ClCompile Include="Pizza.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,33 +30,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PizzaStore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PizzaType.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NYPizzaStore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NYStyleCheesePizza.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NYStyleClamPizza.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NYStyleVeggiePizza.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ChicagoPizzaStore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ChicagoStyleCheesePizza.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ChicagoStyleClamPizza.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ChicagoStyleVeggiePizza.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
