@@ -5,6 +5,7 @@
 class Duck
 {
 public:
+	virtual ~Duck() = default;
 	virtual void fly() = 0;
 	virtual void quack() = 0;
 };
@@ -25,6 +26,7 @@ public:
 class Turkey
 {
 public:
+	virtual ~Turkey() = default;
 	virtual void fly() = 0;
 	virtual void gobble() = 0;
 };
@@ -75,10 +77,6 @@ int main()
 	testDuck(mallardDuck);
 
 	std::unique_ptr<Turkey> wildTurkey = std::make_unique<WildTurkey>();
-	wildTurkey->fly();
-	wildTurkey->gobble();
-
 	std::unique_ptr<Duck> turkeyAdpter = std::make_unique<TurkeyAdapter>(wildTurkey);
-	turkeyAdpter->fly();
-	turkeyAdpter->quack();
+	testDuck(turkeyAdpter);
 }
