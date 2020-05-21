@@ -6,10 +6,9 @@
 class PizzaStore
 {
 public:
-	virtual ~PizzaStore() = default;
-	Pizza* orderPizza(PizzaType type) const;
+    virtual ~PizzaStore() = default;
+    Pizza* orderPizza(PizzaType type) const;
 protected:
-	// abstract Product factoryMethod(String type)
-	virtual Pizza* createPizza(PizzaType type) const = 0;
+    // abstract Product factoryMethod(String type)
+    virtual Pizza* createPizza(PizzaType type) const = 0;
 };
-

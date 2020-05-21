@@ -5,6 +5,5 @@
 class NYStyleClamPizza : public Pizza
 {
 public:
-	NYStyleClamPizza();
+    NYStyleClamPizza();
 };
-

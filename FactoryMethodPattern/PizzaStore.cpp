@@ -2,5 +2,5 @@
 
 Pizza* PizzaStore::orderPizza(PizzaType type) const
 {
-	return createPizza(type);
+    return createPizza(type);
 }

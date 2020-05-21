@@ -5,5 +5,5 @@
 class NYStyleCheesePizza : public Pizza
 {
 public:
-	NYStyleCheesePizza();
+    NYStyleCheesePizza();
 };

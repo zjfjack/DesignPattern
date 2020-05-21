@@ -2,5 +2,5 @@
 
 ChicagoStyleCheesePizza::ChicagoStyleCheesePizza()
 {
-	name = "Chicago Style Cheese Pizza";
+    name = "Chicago Style Cheese Pizza";
 }

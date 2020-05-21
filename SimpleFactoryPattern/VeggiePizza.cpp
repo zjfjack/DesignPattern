@@ -2,5 +2,5 @@
 
 VeggiePizza::VeggiePizza()
 {
-	name = "Veggie Pizza";
+    name = "Veggie Pizza";
 }

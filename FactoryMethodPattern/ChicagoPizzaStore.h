@@ -4,6 +4,5 @@
 // Concrete Creator
 class ChicagoPizzaStore : public PizzaStore
 {
-	virtual Pizza* createPizza(PizzaType type) const override;
+    virtual Pizza* createPizza(PizzaType type) const override;
 };
-

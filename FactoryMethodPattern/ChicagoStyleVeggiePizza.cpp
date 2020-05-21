@@ -2,5 +2,5 @@
 
 ChicagoStyleVeggiePizza::ChicagoStyleVeggiePizza()
 {
-	name = "Chicago Style Veggie Pizza";
+    name = "Chicago Style Veggie Pizza";
 }

@@ -5,16 +5,16 @@
 class Sauce
 {
 public:
-	virtual ~Sauce() = default;
-	std::string description;
+    virtual ~Sauce() = default;
+    std::string description;
 };
 
 // Concrete Product
 class MarinaraSauce : public Sauce
 {
 public:
-	MarinaraSauce()
-	{
-		description = "Marinara Sauce";
-	}
+    MarinaraSauce()
+    {
+        description = "Marinara Sauce";
+    }
 };

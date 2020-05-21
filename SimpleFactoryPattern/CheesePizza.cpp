@@ -2,5 +2,5 @@
 
 CheesePizza::CheesePizza()
 {
-	name = "Cheese Pizza";
+    name = "Cheese Pizza";
 }

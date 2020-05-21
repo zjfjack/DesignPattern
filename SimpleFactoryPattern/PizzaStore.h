@@ -4,11 +4,10 @@
 class PizzaStore
 {
 private:
-	SimpleFactory factory;
+    SimpleFactory factory;
 
 public:
-	PizzaStore(const SimpleFactory &factory);
-	
-	Pizza* orderPizza(PizzaType type) const;
+    PizzaStore(const SimpleFactory &factory);
+    
+    Pizza* orderPizza(PizzaType type) const;
 };
-

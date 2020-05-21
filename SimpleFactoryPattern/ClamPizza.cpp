@@ -2,5 +2,5 @@
 
 ClamPizza::ClamPizza()
 {
-	name = "Clam Pizza";
+    name = "Clam Pizza";
 }

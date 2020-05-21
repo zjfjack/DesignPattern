@@ -2,5 +2,5 @@
 
 enum class PizzaType
 {
-	Cheese, Veggie, Clam
+    Cheese, Veggie, Clam
 };

@@ -2,11 +2,11 @@
 
 enum class PizzaType
 {
-	Cheese, Veggie, Clam
+    Cheese, Veggie, Clam
 };
 
 class SimpleFactory
 {
 public:
-	class Pizza* createPizza(PizzaType type) const;
+    class Pizza* createPizza(PizzaType type) const;
 };

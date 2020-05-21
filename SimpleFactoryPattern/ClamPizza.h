@@ -4,6 +4,5 @@
 class ClamPizza : public Pizza
 {
 public:
-	ClamPizza();
+    ClamPizza();
 };
-

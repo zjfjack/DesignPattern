@@ -5,6 +5,6 @@
 class Pizza
 {
 public:
-	virtual ~Pizza() = default;
-	std::string name;
+    virtual ~Pizza() = default;
+    std::string name;
 };

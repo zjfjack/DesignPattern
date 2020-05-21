@@ -5,6 +5,5 @@
 class ChicagoStyleVeggiePizza : public Pizza
 {
 public:
-	ChicagoStyleVeggiePizza();
+    ChicagoStyleVeggiePizza();
 };
-
