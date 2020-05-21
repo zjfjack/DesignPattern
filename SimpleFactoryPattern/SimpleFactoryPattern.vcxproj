@@ -138,20 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CheesePizza.h" />
-    <ClInclude Include="ClamPizza.h" />
     <ClInclude Include="Pizza.h" />
     <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="SimpleFactory.h" />
-    <ClInclude Include="VeggiePizza.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CheesePizza.cpp" />
-    <ClCompile Include="ClamPizza.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pizza.cpp" />
     <ClCompile Include="PizzaStore.cpp" />
     <ClCompile Include="SimpleFactory.cpp" />
-    <ClCompile Include="VeggiePizza.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

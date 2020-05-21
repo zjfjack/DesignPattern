@@ -1,8 +1,5 @@
 #include "SimpleFactory.h"
 #include "Pizza.h"
-#include "CheesePizza.h"
-#include "ClamPizza.h"
-#include "VeggiePizza.h"
 
 Pizza* SimpleFactory::createPizza(PizzaType type) const
 {
