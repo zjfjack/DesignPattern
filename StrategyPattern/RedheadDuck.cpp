@@ -3,13 +3,9 @@
 #include "FlyBehavior.h"
 #include "QuackBehavior.h"
 
-RedHeadDuck::RedHeadDuck()
-{
-	flyBehavior = new FlyWithWings();
-	quackBehavior = new Quack();
-}
+RedHeadDuck::RedHeadDuck() : Duck(new FlyWithWings(), new Quack()) {}
 
 void RedHeadDuck::display()
 {
-	std::cout << "I'm read head duck" << std::endl;
+    std::cout << "I'm read head duck" << std::endl;
 }

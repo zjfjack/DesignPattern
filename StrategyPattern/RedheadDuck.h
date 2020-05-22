@@ -4,6 +4,6 @@
 class RedHeadDuck : public Duck
 {
 public:
-	RedHeadDuck();
-	virtual void display() override;
+    RedHeadDuck();
+    virtual void display() override;
 };

@@ -4,6 +4,6 @@
 class RubberDuck : public Duck
 {
 public:
-	RubberDuck();
-	virtual void display() override;
+    RubberDuck();
+    virtual void display() override;
 };

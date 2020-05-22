@@ -2,18 +2,20 @@
 #include "QuackBehavior.h"
 #include "Duck.h"
 
+Duck::Duck(FlyBehavior* flyBehavior, QuackBehavior* quackBehavior) : flyBehavior(flyBehavior), quackBehavior(quackBehavior) {}
+
 Duck::~Duck()
 {
-	delete flyBehavior;
-	delete quackBehavior;
+    delete flyBehavior;
+    delete quackBehavior;
 }
 
 void Duck::performFly()
 {
-	flyBehavior->fly();
+    flyBehavior->fly();
 }
 
 void Duck::performQuack()
 {
-	quackBehavior->quack();
+    quackBehavior->quack();
 }

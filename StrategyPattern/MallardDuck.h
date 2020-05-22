@@ -4,6 +4,6 @@
 class MallardDuck : public Duck
 {
 public:
-	MallardDuck();
-	virtual void display() override;
+    MallardDuck();
+    virtual void display() override;
 };

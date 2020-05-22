@@ -3,13 +3,9 @@
 #include "FlyBehavior.h"
 #include "QuackBehavior.h"
 
-MallardDuck::MallardDuck()
-{
-	flyBehavior = new FlyWithWings();
-	quackBehavior = new MuteQuack();
-}
+MallardDuck::MallardDuck() : Duck(new FlyWithWings(), new MuteQuack()) {}
 
 void MallardDuck::display()
 {
-	std::cout << "I'm mallard duck" << std::endl;
+    std::cout << "I'm mallard duck" << std::endl;
 }
