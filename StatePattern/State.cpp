@@ -6,7 +6,7 @@
 
 SoldState::~SoldState()
 {
-    std::cout << "SoldState destoryed" << std::endl;
+    std::cout << "SoldState destroyed" << std::endl;
 }
 
 void SoldState::insertQuarter()
@@ -43,7 +43,7 @@ void SoldState::dispense()
 
 SoldOutState::~SoldOutState()
 {
-    std::cout << "SoldOutState destoryed" << std::endl;
+    std::cout << "SoldOutState destroyed" << std::endl;
 }
 
 void SoldOutState::insertQuarter()
@@ -68,7 +68,7 @@ void SoldOutState::dispense()
 
 NoQuarterState::~NoQuarterState()
 {
-    std::cout << "NoQuarterState destoryed" << std::endl;
+    std::cout << "NoQuarterState destroyed" << std::endl;
 }
 
 void NoQuarterState::insertQuarter()
@@ -104,7 +104,7 @@ HasQuarterState::HasQuarterState()
 
 HasQuarterState::~HasQuarterState()
 {
-    std::cout << "HasQuarterState destoryed" << std::endl;
+    std::cout << "HasQuarterState destroyed" << std::endl;
 }
 
 void HasQuarterState::insertQuarter()
@@ -146,7 +146,7 @@ void HasQuarterState::dispense()
 
 WinnerState::~WinnerState()
 {
-    std::cout << "WinnerState destoryed" << std::endl;
+    std::cout << "WinnerState destroyed" << std::endl;
 }
 
 void WinnerState::insertQuarter()

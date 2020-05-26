@@ -17,7 +17,7 @@ GumballMachine::GumballMachine(int numberGumballs) :
 
 GumballMachine::~GumballMachine()
 {
-    std::cout << "Gumball Machine destoryed" << std::endl;
+    std::cout << "Gumball Machine destroyed" << std::endl;
 }
 
 void GumballMachine::setupStateThisWeakPointer()
