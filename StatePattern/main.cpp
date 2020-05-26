@@ -29,4 +29,27 @@ int main()
     gumballMachine->insertQuarter();
     gumballMachine->turnCrank();
     std::cout << *gumballMachine << std::endl;
+
+    gumballMachine->refill(10);
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    gumballMachine->insertQuarter();
+    gumballMachine->turnCrank();
+    std::cout << *gumballMachine << std::endl;
 }

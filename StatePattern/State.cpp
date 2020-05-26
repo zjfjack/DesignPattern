@@ -1,6 +1,8 @@
 #include "State.h"
 #include "GumballMachine.h"
 #include <iostream>
+#include <random>
+#include <time.h>
 
 SoldState::~SoldState()
 {
@@ -95,6 +97,11 @@ void NoQuarterState::dispense()
     std::cout << "You need to pay first" << std::endl;
 }
 
+HasQuarterState::HasQuarterState()
+{
+    srand((unsigned)time(0));
+}
+
 HasQuarterState::~HasQuarterState()
 {
     std::cout << "HasQuarterState destoryed" << std::endl;
@@ -121,7 +128,12 @@ void HasQuarterState::turnCrank()
     if (auto sharedGumballMachine = gumballMachine.lock())
     {
         std::cout << "You turned..." << std::endl;
-        sharedGumballMachine->setState(GumballMachineState::Sold);
+
+        int randomNumber = rand();
+        bool isWinner = ((randomNumber % 10) == 0) && (sharedGumballMachine->getCount() > 1);
+
+        auto setState = isWinner ? GumballMachineState::Winner : GumballMachineState::Sold;
+        sharedGumballMachine->setState(setState);
     }
     else
         std::cout << "weak_ptr gumballMachine is expired" << std::endl;
@@ -130,4 +142,46 @@ void HasQuarterState::turnCrank()
 void HasQuarterState::dispense()
 {
     std::cout << "No gumball dispensed" << std::endl;
+}
+
+WinnerState::~WinnerState()
+{
+    std::cout << "WinnerState destoryed" << std::endl;
+}
+
+void WinnerState::insertQuarter()
+{
+    std::cout << "You can't insert another quarte" << std::endl;
+}
+
+void WinnerState::ejectQuarter()
+{
+    std::cout << "Sorry, you already turned the crank" << std::endl;
+}
+
+void WinnerState::turnCrank()
+{
+    std::cout << "Turning twice doesn't get you another gumball" << std::endl;
+}
+
+void WinnerState::dispense()
+{
+    if (auto sharedGumballMachine = gumballMachine.lock())
+    {
+        std::cout << "YOU ARE A WINNER! You get two gumballs for your quarter" << std::endl;
+        sharedGumballMachine->releaseBall();
+        // no need to check count because it is checked in HasQuarter turnCrank
+        sharedGumballMachine->releaseBall();
+
+        // The same code as SoldState::dispense()
+        if (sharedGumballMachine->getCount() > 0)
+            sharedGumballMachine->setState(GumballMachineState::NoQuarter);
+        else
+        {
+            std::cout << "Oops, out of gumballs" << std::endl;
+            sharedGumballMachine->setState(GumballMachineState::SoldOut);
+        }
+    }
+    else
+        std::cout << "weak_ptr gumballMachine is expired" << std::endl;
 }

@@ -46,8 +46,19 @@ public:
 
 class HasQuarterState : public State
 {
-public:
+public: 
+    HasQuarterState();
     ~HasQuarterState();
+    virtual void insertQuarter() override;
+    virtual void ejectQuarter() override;
+    virtual void turnCrank() override;
+    virtual void dispense() override;
+};
+
+class WinnerState : public State
+{
+public:
+    ~WinnerState();
     virtual void insertQuarter() override;
     virtual void ejectQuarter() override;
     virtual void turnCrank() override;

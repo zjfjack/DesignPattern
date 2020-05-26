@@ -6,6 +6,7 @@ GumballMachine::GumballMachine(int numberGumballs) :
     noQuarterState(std::make_shared<NoQuarterState>()),
     hasQuarterState(std::make_shared<HasQuarterState>()),
     soldState(std::make_shared<SoldState>()),
+    winnerState(std::make_shared<WinnerState>()),
     count(numberGumballs)
 {
     if (count > 0)
@@ -26,6 +27,7 @@ void GumballMachine::setupStateThisWeakPointer()
     noQuarterState->gumballMachine = weakPtr;
     hasQuarterState->gumballMachine = weakPtr;
     soldState->gumballMachine = weakPtr;
+    winnerState->gumballMachine = weakPtr;
 }
 
 void GumballMachine::setState(GumballMachineState state)
@@ -44,6 +46,8 @@ void GumballMachine::setState(GumballMachineState state)
     case GumballMachineState::Sold:
         this->state = soldState;
         break;
+    case GumballMachineState::Winner:
+        this->state = winnerState;
     }
 }
 
@@ -75,6 +79,12 @@ void GumballMachine::releaseBall()
         count -= 1;
 }
 
+void GumballMachine::refill(int numberGumballs)
+{
+    state = noQuarterState;
+    count += numberGumballs;
+}
+
 std::ostream& operator<<(std::ostream& stream, const GumballMachine& gumballMachine)
 {
     std::string stateString;
@@ -84,8 +94,10 @@ std::ostream& operator<<(std::ostream& stream, const GumballMachine& gumballMach
         stateString = "HasQuarter";
     else if (gumballMachine.state == gumballMachine.noQuarterState)
         stateString = "noQuarter";
-    else
+    else if (gumballMachine.state == gumballMachine.soldState)
         stateString = "Sold";
+    else
+        stateString = "Winner";
         
     return stream << "GumballMachine state: " << stateString << " number of balls: " << gumballMachine.count << std::endl;
 }
