@@ -17,6 +17,7 @@ public:
 class SoldState : public State
 {
 public:
+    ~SoldState();
     virtual void insertQuarter() override;
     virtual void ejectQuarter() override;
     virtual void turnCrank() override;
@@ -26,6 +27,7 @@ public:
 class SoldOutState : public State
 {
 public:
+    ~SoldOutState();
     virtual void insertQuarter() override;
     virtual void ejectQuarter() override;
     virtual void turnCrank() override;
@@ -35,6 +37,7 @@ public:
 class NoQuarterState : public State
 {
 public:
+    ~NoQuarterState();
     virtual void insertQuarter() override;
     virtual void ejectQuarter() override;
     virtual void turnCrank() override;
@@ -44,6 +47,7 @@ public:
 class HasQuarterState : public State
 {
 public:
+    ~HasQuarterState();
     virtual void insertQuarter() override;
     virtual void ejectQuarter() override;
     virtual void turnCrank() override;

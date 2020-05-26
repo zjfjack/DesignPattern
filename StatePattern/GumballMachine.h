@@ -1,5 +1,6 @@
 #pragma once
 #include <memory>
+#include <iostream>
 
 class State;
 
@@ -8,12 +9,22 @@ enum class GumballMachineState
     SoldOut, NoQuarter, HasQuarter, Sold
 };
 
-class GumballMachine : std::enable_shared_from_this<GumballMachine>
+class GumballMachine : public std::enable_shared_from_this<GumballMachine>
 {
 public:
-    GumballMachine();
+    GumballMachine(int numberGumballs);
+    ~GumballMachine();
+
+    void setupStateThisWeakPointer();
     void setState(GumballMachineState state);
     unsigned int getCount();
+
+    void insertQuarter();
+    void ejectQuarter();
+    void turnCrank();
+    void releaseBall();
+
+    friend std::ostream& operator<<(std::ostream& stream, const GumballMachine& gumballMachine);
 private:
     std::shared_ptr<State> soldOutState;
     std::shared_ptr<State> noQuarterState;

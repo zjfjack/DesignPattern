@@ -2,6 +2,11 @@
 #include "GumballMachine.h"
 #include <iostream>
 
+SoldState::~SoldState()
+{
+    std::cout << "SoldState destoryed" << std::endl;
+}
+
 void SoldState::insertQuarter()
 {
     std::cout << "Please wait, we're already giving you a gumball" << std::endl;
@@ -21,6 +26,7 @@ void SoldState::dispense()
 {
     if (auto sharedGumballMachine = gumballMachine.lock())
     {
+        sharedGumballMachine->releaseBall();
         if (sharedGumballMachine->getCount() > 0)
             sharedGumballMachine->setState(GumballMachineState::NoQuarter);
         else
@@ -31,6 +37,11 @@ void SoldState::dispense()
     }
     else
         std::cout << "weak_ptr gumballMachine is expired" << std::endl;
+}
+
+SoldOutState::~SoldOutState()
+{
+    std::cout << "SoldOutState destoryed" << std::endl;
 }
 
 void SoldOutState::insertQuarter()
@@ -51,6 +62,11 @@ void SoldOutState::turnCrank()
 void SoldOutState::dispense()
 {
     std::cout << "No gumball dispensed" << std::endl;
+}
+
+NoQuarterState::~NoQuarterState()
+{
+    std::cout << "NoQuarterState destoryed" << std::endl;
 }
 
 void NoQuarterState::insertQuarter()
@@ -79,6 +95,11 @@ void NoQuarterState::dispense()
     std::cout << "You need to pay first" << std::endl;
 }
 
+HasQuarterState::~HasQuarterState()
+{
+    std::cout << "HasQuarterState destoryed" << std::endl;
+}
+
 void HasQuarterState::insertQuarter()
 {
     std::cout << "You can't insert another quarter" << std::endl;
@@ -87,6 +108,12 @@ void HasQuarterState::insertQuarter()
 void HasQuarterState::ejectQuarter()
 {
     std::cout << "Quarter returned" << std::endl;
+    if (auto sharedGumballMachine = gumballMachine.lock())
+    {
+        sharedGumballMachine->setState(GumballMachineState::NoQuarter);
+    }
+    else
+        std::cout << "weak_ptr gumballMachine is expired" << std::endl;
 }
 
 void HasQuarterState::turnCrank()
