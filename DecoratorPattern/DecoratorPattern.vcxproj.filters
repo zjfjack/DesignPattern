@@ -18,22 +18,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Espresso.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HouseBlend.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Mocha.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Soy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Whip.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CondimentDecorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Beverage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,21 +30,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CondimentDecorator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Espresso.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HouseBlend.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mocha.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Soy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Whip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

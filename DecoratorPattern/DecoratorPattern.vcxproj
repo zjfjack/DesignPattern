@@ -138,22 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Beverage.cpp" />
     <ClCompile Include="CondimentDecorator.cpp" />
-    <ClCompile Include="Espresso.cpp" />
-    <ClCompile Include="HouseBlend.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Mocha.cpp" />
-    <ClCompile Include="Soy.cpp" />
-    <ClCompile Include="Whip.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Beverage.h" />
     <ClInclude Include="CondimentDecorator.h" />
-    <ClInclude Include="Espresso.h" />
-    <ClInclude Include="HouseBlend.h" />
-    <ClInclude Include="Mocha.h" />
-    <ClInclude Include="Soy.h" />
-    <ClInclude Include="Whip.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
