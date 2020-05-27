@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateMethodPattern", "Te
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatePattern", "StatePattern\StatePattern.vcxproj", "{8CCD0B79-E07D-496F-BF97-13F562AE2474}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualProxyPattern", "VirtualProxyPattern\VirtualProxyPattern.vcxproj", "{F9401A4E-A24F-4293-B2BF-85E92402886F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{8CCD0B79-E07D-496F-BF97-13F562AE2474}.Release|x64.Build.0 = Release|x64
 		{8CCD0B79-E07D-496F-BF97-13F562AE2474}.Release|x86.ActiveCfg = Release|Win32
 		{8CCD0B79-E07D-496F-BF97-13F562AE2474}.Release|x86.Build.0 = Release|Win32
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Debug|x64.ActiveCfg = Debug|x64
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Debug|x64.Build.0 = Debug|x64
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Debug|x86.Build.0 = Debug|Win32
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Release|x64.ActiveCfg = Release|x64
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Release|x64.Build.0 = Release|x64
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Release|x86.ActiveCfg = Release|Win32
+		{F9401A4E-A24F-4293-B2BF-85E92402886F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
