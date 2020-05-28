@@ -138,18 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CurrentConditionDisplay.cpp" />
-    <ClCompile Include="ForecastDisplay.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="WeatherData.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CurrentConditionDisplay.h" />
-    <ClInclude Include="DisplayElement.h" />
-    <ClInclude Include="ForecastDisplay.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="Subject.h" />
-    <ClInclude Include="WeatherData.h" />
     <ClInclude Include="WeatherMeasurements.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
