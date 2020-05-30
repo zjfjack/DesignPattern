@@ -155,18 +155,12 @@
     <ClCompile Include="Duck.cpp" />
     <ClCompile Include="FlyBehavior.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MallardDuck.cpp" />
     <ClCompile Include="QuackBehavior.cpp" />
-    <ClCompile Include="RedheadDuck.cpp" />
-    <ClCompile Include="RubberDuck.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Duck.h" />
     <ClInclude Include="FlyBehavior.h" />
-    <ClInclude Include="MallardDuck.h" />
     <ClInclude Include="QuackBehavior.h" />
-    <ClInclude Include="RedheadDuck.h" />
-    <ClInclude Include="RubberDuck.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

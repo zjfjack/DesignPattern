@@ -1,6 +1,4 @@
-#include "RedheadDuck.h"
-#include "MallardDuck.h"
-#include "RubberDuck.h"
+#include "Duck.h"
 #include "FlyBehavior.h"
 
 int main()
@@ -29,4 +27,15 @@ int main()
     delete redHeadDuck;
     delete rubberDuck;
     delete mallardDuck;
+
+    // Test copy constructors and assignment operators
+    MallardDuck mDuck1;
+    MallardDuck mDuck2 = mDuck1;
+    MallardDuck mDuck3;
+    mDuck1 = mDuck3;
+
+    RedHeadDuck rDuck1;
+    //RedHeadDuck rDuck2 = rDuck1; copy constructor is deleted
+    RedHeadDuck rDuck3;
+    //rDuck1 = rDuck3; assignment operator is deleted
 }

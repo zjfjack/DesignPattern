@@ -14,3 +14,30 @@ public:
     void performFly();
     void performQuack();
 };
+
+class MallardDuck : public Duck
+{
+public:
+    MallardDuck();
+    MallardDuck(const MallardDuck&); // copy constructor (Have to overload or delete, otherwise shallow copy will be default implemented. When the second object is destroyed, it will crash because we deleted the pointer in first object deconstructor)
+    MallardDuck& operator=(const MallardDuck& rhs); // assignment constructor (Have to overload or delete)
+    virtual void display() override;
+};
+
+class RedHeadDuck : public Duck
+{
+public:
+    RedHeadDuck();
+    RedHeadDuck(const RedHeadDuck&) = delete;
+    RedHeadDuck& operator=(const RedHeadDuck&) = delete;
+    virtual void display() override;
+};
+
+class RubberDuck : public Duck
+{
+public:
+    RubberDuck();
+    RubberDuck(const RubberDuck&) = delete;
+    RubberDuck& operator=(const RubberDuck&) = delete;
+    virtual void display() override;
+};

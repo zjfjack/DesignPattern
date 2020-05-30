@@ -21,16 +21,7 @@
     <ClCompile Include="FlyBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MallardDuck.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="QuackBehavior.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RedheadDuck.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RubberDuck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -44,16 +35,7 @@
     <ClInclude Include="FlyBehavior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MallardDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="QuackBehavior.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RedheadDuck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RubberDuck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
