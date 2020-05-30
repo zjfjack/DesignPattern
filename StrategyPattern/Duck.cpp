@@ -27,6 +27,10 @@ MallardDuck::MallardDuck(const MallardDuck&) : Duck(new FlyWithWings(), new Mute
 
 MallardDuck& MallardDuck::operator=(const MallardDuck& rhs)
 {
+    delete flyBehavior;
+    delete quackBehavior;
+    flyBehavior = new FlyWithWings();
+    quackBehavior = new MuteQuack();
     return *this;
 }
 
